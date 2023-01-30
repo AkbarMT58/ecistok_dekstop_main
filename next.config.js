@@ -1,0 +1,32 @@
+module.exports = {
+  reactStrictMode: true,
+  env: {
+    CONVERSION_MONEY: process.env.CONVERSION_MONEY,
+    EXPIRED_TOKEN_DAY: process.env.EXPIRED_TOKEN_DAY,
+    API_TEMPLATE: process.env.API_TEMPLATE,
+    URL_CMS: process.env.URL_CMS,
+    API_GATEWAY: process.env.API_GATEWAY,
+    URL_UPLOAD: process.env.URL_UPLOAD,
+    HOST_NAME: process.env.HOST_NAME,
+    ENV_NODE: process.env.ENV_NODE,
+    MIDTRANS: process.env.MIDTRANS,
+    CLIENT_KEY: process.env.CLIENT_KEY,
+    XENDIT_KEY: process.env.XENDIT_KEY,
+  },
+  images: {
+    domains: [
+      "ocistok.co.id",
+      "img.alicdn.com",
+      "cbu01.alicdn.com",
+      "api.ocistok.co.id",
+      "192.168.22.189",
+      "dev.ocistok.co.id",
+      "cdn.shopify.com",
+      "cms.ocistok.id",
+      "gw.alicdn.com",
+      "s.alicdn.com",
+      "sc04.alicdn.com",
+      "filebroker-cdn.taobao.global",
+    ],
+  },
+};

@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #e6e2e1;
+  background-repeat: repeat;
+  background-position: top;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.image-gallery-thumbnail.active,
+.image-gallery-thumbnail:focus {
+  outline: none;
+  border: 4px solid #ff8c00 !important;
+}
+
+.image-gallery-thumbnail:hover {
+  outline: none;
+  border: 4px solid #337ab7;
+}
+
+.BgMedsos {
+  background-color: #ff8c00;
+  background-image: url('/bg-logo-ocistok.png');
+  background-size: 33.3% auto;
+}
+
+@media (min-width: 1280px) {
+  .img-hero {
+    height: 371px;
+  }
+}
+@media (min-width: 1536px) {
+  .img-hero {
+    height: 445px;
+  }
+}
+
+/* Testing */
+.category-scroll::-webkit-scrollbar {
+  width: 4px;
+  cursor: pointer;
+  /*background-color: rgba(229, 231, 235, var(--bg-opacity));*/
+}
+.category-scroll::-webkit-scrollbar-track {
+  background-color: rgba(229, 231, 235, var(--bg-opacity));
+  cursor: pointer;
+  /*background: red;*/
+}
+.category-scroll::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #a0aec0;
+  /*outline: 1px solid slategrey;*/
+}
+
+.variant-scroll::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+  /*background-color: rgba(229, 231, 235, var(--bg-opacity));*/
+}
+.variant-scroll::-webkit-scrollbar-track {
+  background-color: rgba(229, 231, 235, var(--bg-opacity));
+  cursor: pointer;
+  /*background: red;*/
+}
+.variant-scroll::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgba(255, 140, 0, var(--tw-bg-opacity));
+  /*outline: 1px solid slategrey;*/
+}
+
+.modal-scroll::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+  /*background-color: rgba(229, 231, 235, var(--bg-opacity));*/
+}
+.modal-scroll::-webkit-scrollbar-track {
+  background-color: rgba(229, 231, 235, var(--bg-opacity));
+  cursor: pointer;
+  /*background: red;*/
+}
+.modal-scroll::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(240, 120, 5);
+}
+
+.carousel .thumb.selected {
+  border: 3px rgb(240, 120, 5) solid !important;
+  border-radius: 10px;
+}
+
+.carousel .thumb:hover {
+  border: 3px rgb(240, 120, 5) solid !important;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .test .react-loading-skeleton {
+    width: 530px !important;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.swal-modal .swal-text {
+  text-align: center;
+}
+
+.swal-icon--custom img {
+  margin: 0 auto;
+}

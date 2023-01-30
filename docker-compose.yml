@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  ocistok-desktop-1:
+    image: ocistok/ocistok-desktop:production
+    container_name: ocistok-desktop-1
+    ports:
+      - 3002:3000
+    networks:
+      - mynet
+
+  ocistok-desktop-2:
+    image: ocistok/ocistok-desktop:production
+    container_name: ocistok-desktop-2
+    depends_on:
+      - ocistok-desktop-1
+    ports:
+      - 3003:3000
+    networks:
+      - mynet
+
+networks:
+  mynet:
+    external: true

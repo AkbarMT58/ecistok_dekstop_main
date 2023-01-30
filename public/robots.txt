@@ -1,0 +1,13 @@
+# only Googlebot
+User-agent: Googlebot
+Disallow: /dashboard/
+Disallow: /validate/
+Disallow: /validate_account/
+Disallow: /verification_account/
+Disallow: /verification_newpassword/
+
+# all crawlers 
+User-agent: *
+Allow: /
+
+Sitemap: http://ocistok.com/sitemap.xml
